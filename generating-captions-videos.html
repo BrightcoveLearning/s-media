@@ -47,6 +47,9 @@
     <ol class="bcls-tasklist-restart">
       <li>Open the  <i data-feather="video"></i> <strong>Media</strong> module.</li>
       <li>Click the link for the video you want to edit to open the video properties.</li>
+{% if site.product_short == "Beacon" or site.product_short == "CorpTV" %}
+      <li>Click the <strong>Video and Tracks</strong> tab.</li>
+{% endif %}
       <li>Locate the <strong>Text Tracks</strong> section and click <span class="button-blue-text-bordered">Edit</span></li>
       <li>Select the <strong>Auto caption</strong> option.</li>
       <li>Select the <strong>Language</strong> to generate the captions in. If a <strong>Language</strong> is not selected, the video language is auto-detected. Selecting a language will improve the caption file generation time and may improve overall accuracy.</li>
