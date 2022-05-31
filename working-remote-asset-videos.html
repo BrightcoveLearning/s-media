@@ -62,6 +62,9 @@
       <li>Viewers may not be able play remote asset videos if their computer's clock time is set ahead of the actual time</li>
       <li>Cue points cannot be added to live remote asset videos</li>
       <li>It is not possible to convert an existing normal VOD asset to a remote asset</li>
+{% if site.product_short == "Beacon" or site.product_short == "CorpTV" %}
+      <li>Remote assets can be created/added to Video Cloud playlists but cannot be ingested/added to Beacon/OTT playlists in  {{ site.product_short }} Studio.</li>
+{% endif %}
     </ul>
   </section>
 </article>
