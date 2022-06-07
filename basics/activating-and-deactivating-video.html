@@ -2,8 +2,10 @@
   <h1>{{ page.title }}</h1>
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
+    {% if site.product_short == "Video Cloud" %}
     <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="4878165648001">&nbsp;</div>
     <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+   {% endif %}
     <p>The <strong>Status</strong> column in the Media module indicates if the video is <strong>Activated</strong> or <strong>Deactivated</strong>.</p>
     <ul>
       <li><img alt="" src="/assets/images/s-media-img/basics/icon-green-eye.png" /> - Indicates the video is active</li>
