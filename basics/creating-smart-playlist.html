@@ -8,8 +8,14 @@
 {% endif %}
 <h3>Prerequisites</h3>
 <ul>
+{% if site.product_short == "Video Cloud" %}
   <li>You have <a href="/get-started/basics/uploading-videos.html">uploaded videos</a> to your {{ site.product_short }} account</li>
   <li>You have <a href="/get-started/basics/editing-basic-video-properties.html">added some tags</a> to your videos</li>
+   {% endif %}
+{% if site.product_short == "Beacon" or site.product_short == "CorpTV" %}
+  <li>You have <a href="/get-started/basics/media/uploading-videos.html">uploaded videos</a> to your {{ site.product_short }} account</li>
+  <li>You have <a href="/get-started/basics/media/editing-basic-video-details.html">added some tags</a> to your videos</li>
+   {% endif %}
 </ul>
 <h3>Steps</h3>
 <ol class="bcls-tasklist-restart">
