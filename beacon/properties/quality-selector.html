@@ -1,0 +1,43 @@
+<article class="bcls-article">
+    <h1>{{ page.title }}</h1>
+    <summary>{{ page.description }}</summary>
+    <section class="bcls-section">
+      <h2 id="open">Overview</h2>
+      <p>The Quality Selector allows Beacon users to access, view, and select from various rendition levels, helping to choose the quality of the videos. Brightcove Player supports quality selection, so this implementation aligns with Brightcove’s support of this capability.</p>
+      <p>By default, the player loads a rendition based on the platform's native behavior for each new session. The player will retain the quality selected during a session, so the app maintains the same quality selection when switching from one video to another. 
+        Let's say you are watching Episode One and select a certain quality. The quality selection is maintained when Episode Two starts playing in the same session.</p>
+      </section>
+      <section class="bcls-section">  
+<h2>Types of resolution</h2>
+<h3>For <strong>iOS</strong>:</h3>
+<ul>
+  <li><strong>Best (Default)</strong> - The best resolution of the video</li>
+  <li><strong>Data Saver</strong> - The lowest resolution of the video.</li>
+  <p></p>
+  <figure class="bcls-figure">
+    <img class="bcls-image" src="/assets/images/s-media-img/beacon/quality-selector-ios.webp" alt="ios">
+    <figcaption class="bcls-caption--image">ios</figcaption>
+  </figure>
+</ul>
+<h3>For <strong> Android</strong>:</h3>
+<ul>
+  <li><strong>Best </strong> - The best resolution of the video</li>
+  <li><strong>Automatic (Default)</strong>- You can see the network speed and pick one. Meanwhile, this would be the default. </li>
+  <li><strong>Data Saver</strong> - The lowest resolution of the video. </li>
+  <p></p>
+  <figure class="bcls-figure">
+    <img class="bcls-image" src="/assets/images/s-media-img/beacon/android.webp" alt="android">
+    <figcaption class="bcls-caption--image">android</figcaption>
+  </figure>
+</ul>
+<aside class="bcls-aside bcls-aside--information language-editable">Notes:
+<ul>
+  <li>This feature only applies to Player E</li>
+  <li>Support this for all content types that support different renditions/ bitrates</li>
+  <li>Currently, this feature is only applicable to iOS and Android</li>
+  <li>The web is not supported at this point.</li>
+</ul>
+
+</aside>
+    </section>
+</article>
